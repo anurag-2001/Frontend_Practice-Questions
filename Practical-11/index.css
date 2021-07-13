@@ -1,0 +1,202 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    width:100vw;
+    height:100vh;
+    display: grid;
+    place-items: center;
+    background-image: url("bck.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: center center;
+    background-position: center center;
+}
+.mainDiv{
+    width:40%;
+    max-width: 50%;
+    height:50%;
+    background-color:rgb(194, 190, 190);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba( 48, 37, 37, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color:white;
+    display: none;
+}
+
+.mainDiv .question{
+    font-size: 18px;
+    font-weight: 600;
+    overflow: hidden;
+    word-wrap: break-word;
+    letter-spacing: 0.5px;
+    margin: 2rem;
+}
+
+.mainDiv .choices{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    /* font-size: 20px; */
+    transform: scale(1);
+    transition: all 0.3s linear;
+}
+
+
+.choices .choice{
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s linear;
+    min-width: 100%;
+}
+
+.choice > label{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.radio{
+    margin: 10px;
+    border: none;
+  margin-right: 20px;
+}
+
+
+.btnGroup{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.btn{
+    background-color: blueviolet;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0.7rem 2rem;
+    background: rgba( 48, 37, 37, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: all 0.3s;
+}
+
+.btn >button{
+    border: transparent;
+    width: 100%;
+    background-color: transparent;
+    color:white;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+
+.btn_left{
+    display: none;
+}
+
+.btn_show{
+    display:block;
+}
+
+.btn_submit{
+    display: none;
+}
+.btn:hover{
+    background: rgba( 48, 37, 37, 0.22 );
+    border: 1px solid rgba( 255, 255, 255, 0.7 );
+}
+
+.resultDiv{
+    width:40%;
+    max-width: 50%;
+    height:50%;
+    background-color:rgb(194, 190, 190);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba( 48, 37, 37, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color:white;
+    display: none;
+}
+
+.resultDiv h2,.startDiv h2{
+    letter-spacing: 1.5px;
+    /* font-size: 30px; */
+    /* background-color: green; */
+}
+
+.resultDiv h4,.startDiv h3{
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+
+}
+
+.resultDiv button,.startBtn{
+    border: transparent;
+    /* width: 0%; */
+    font-size: 18px;
+    background-color: transparent;
+    color:white;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+    background: rgba( 48, 37, 37, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: all 0.3s;
+    padding:1rem 4rem;
+}
+
+.show{
+    display: flex;
+}
+
+.startDiv{
+    width:40%;
+    max-width: 50%;
+    height:50%;
+    background-color:rgb(194, 190, 190);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba( 48, 37, 37, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color:white;
+
+}
+
