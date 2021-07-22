@@ -1,0 +1,18 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.app{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ background-color: aliceblue;
+ height: 20vh;
+}
+
+h3{
+  margin-block: 2rem;
+  font-size: 2rem;
+}
